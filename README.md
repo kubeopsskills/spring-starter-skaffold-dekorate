@@ -3,9 +3,9 @@
 This is a boilerplate template for building / deploying a Spring microservice on Kubernetes using Skaffold + Dekorate.
 
 ## Versioning
-| GitHub Release | JDK Version | Spring Boot Version | Spring Cloud Version | JDK Version | Skaffold Version | Dekorate Version | Jib Version
-|----------------|------------ |---------------------|----------------------|-------------|------------------|------------------|------------|
-| master | 15 | 2.3.4.RELEASE| Hoxton.RELEASE | 15 | 1 | 0.13.2 | 2.6.0
+| GitHub Release | JDK Version | Spring Boot Version | Spring Cloud Version | Skaffold Version | Dekorate Version | Jib Version
+|----------------|------------ |---------------------|----------------------|------------------|------------------|------------|
+| master | 15 | 2.3.4.RELEASE| Hoxton.RELEASE | 1 | 0.13.2 | 2.6.0
 
 ## Project Structure
 ```
