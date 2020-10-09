@@ -9,7 +9,6 @@ This is a boilerplate template for building / deploying a Spring microservice on
 
 ## Project Structure
 ```
-├── LICENSE.md
 ├── README.md
 ├── manifests
 ├── mvnw
