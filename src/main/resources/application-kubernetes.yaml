@@ -1,0 +1,32 @@
+dekorate:
+  kubernetes:
+    part-of: ghcr.io/kubeopsskills
+    name: helloworld-demo
+    version: "1.0.0"
+    replicas: "1"
+    deployment-strategy: RollingUpdate
+    rolling-update:
+      maxSurge: "1"
+      maxUnavailable: "0"
+    request-resources:
+       cpu: "256m"
+       memory: "512Mi"
+    limit-resources:
+       cpu: "512m"
+       memory: "1024Mi"
+    liveness-probe:
+      http-action-path: /actuator/health/liveness
+      initial-delay-seconds: "30"
+      period-seconds: "10"
+    readiness-probe:
+      http-action-path: /actuator/health/readiness
+      initial-delay-seconds: "30"
+      period-seconds: "10"
+    service-account: microservice
+    image-pull-policy: Always
+    env-vars:
+    - name: SPRING_PROFILES_ACTIVE
+      value: dev
+    expose: false
+  options:
+    output-path: ../../manifests

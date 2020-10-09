@@ -1,0 +1,13 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: ghcr.io/kubeopsskills/helloworld-demo
+      jib: {}
+
+profiles:
+  - name: dev
+    deploy:
+      kubectl:
+        manifests:
+        - manifests/*.yml

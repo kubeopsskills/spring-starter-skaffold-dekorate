@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: helloworld-demo
+  cloud:
+    kubernetes:
+      reload:
+        enabled: true
+      config:
+        enabled: true
+
+server:
+  port: 8080
