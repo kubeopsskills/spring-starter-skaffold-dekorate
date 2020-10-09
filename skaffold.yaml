@@ -4,6 +4,8 @@ build:
   artifacts:
     - image: ghcr.io/kubeopsskills/helloworld-demo
       jib: {}
+  local:
+    push: true
 
 profiles:
   - name: dev
