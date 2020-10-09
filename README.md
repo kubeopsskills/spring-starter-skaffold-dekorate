@@ -75,7 +75,7 @@ $ kubectl apply -k config
 To enable Continuous Development (Develop + Integrate Source Code From IDE) on Kubernetes, run following command:
 
 ```sh
-$ skaffold dev -p dev
+$ skaffold dev -p dev -n [namespace]
 ```
 
 This will build the project source code to Docker image and then deploying it on Kubernetes with forwarding logs from Kubernetes to your IDE!
