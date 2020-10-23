@@ -22,5 +22,7 @@ dekorate:
     expose: false
   docker:
     image: ghcr.io/kubeopsskills/helloworld-demo
+  # docker:
+  #   image: gcr.io/kubernetes-the-hardway-267516/helloworld-demo
   options:
     output-path: ../../manifests

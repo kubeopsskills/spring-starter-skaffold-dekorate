@@ -1,0 +1,15 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: gcr.io/kubernetes-the-hardway-267516/helloworld-demo
+      jib: {}
+  googleCloudBuild:
+    projectId: kubernetes-the-hardway-267516
+
+profiles:
+  - name: dev
+    deploy:
+      kubectl:
+        manifests:
+        - manifests/*.yml
